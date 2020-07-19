@@ -1,0 +1,25 @@
+:host {
+  .highlight {
+    background-image: url('../../assets/jasmine.jpg');
+    width: 97%;
+    height: 16rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    .text {
+      color: #60996B;
+      font-weight: 600;
+      padding: 3rem;
+    }
+
+    button {
+      background-color: #b6d7a8;
+    }
+  }
+}

@@ -9,13 +9,21 @@ import {MatButtonModule} from '@angular/material/button';
 import { HomeComponent } from './home/home.component';
 import { CardProductComponent } from './card-product/card-product.component';
 import {MatInputModule} from '@angular/material/input';
+import { StoreComponent } from './store/store.component';
+import { ProductComponent } from './product/product.component';
+import { AdminComponent } from './admin/admin.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     CardProductComponent,
-    CardProductComponent
+    CardProductComponent,
+    StoreComponent,
+    ProductComponent,
+    AdminComponent,
+    ProfileComponent
   ],
   imports: [
     AppRoutingModule,

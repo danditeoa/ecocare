@@ -39,4 +39,19 @@
       cursor: pointer;
     }
   }
+
+  .footer {
+    background-color: #F0E8E8;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+
+    p {
+      color: #AEA1A1;
+    }
+
+    img {
+      width: 10rem;
+    }
+  }
 }

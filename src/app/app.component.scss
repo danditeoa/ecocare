@@ -1,11 +1,30 @@
 :host {
   mat-toolbar {
-    background-color: #b6d7a8;
-    color: #000;
+    background-color: #F18A8A;
+    color: #fff;
 
     span {
-      border-bottom: 1px solid black;
+      border-bottom: 1px solid #fff;
       font-family: Radley;
+      font-size: 2rem;
+    }
+
+    .header-items {
+      display: flex;
+      align-items: center;
+
+      mat-form-field {
+        margin-right: 6rem;
+
+        img {
+          margin-bottom: 0;
+        }
+      }
+
+      .link-loja {
+        margin-right: 6rem;
+        cursor: pointer;
+      }
     }
 
     mat-toolbar-row {

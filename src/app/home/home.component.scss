@@ -170,10 +170,19 @@
 
     .content-depo {
       display: flex;
+      width: 100%;
+      justify-content: space-around;
     }
 
     .depoimento {
       display: flex;
+      width: 27rem;
+      padding: 1rem;
+
+      .text {
+        width: 18rem;
+        padding: 1rem;
+      }
     }
 
     .image-profile {
@@ -192,6 +201,33 @@
       border-radius: 6rem;
       height: 7rem;
       border: 2px solid black;
+    }
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    height: 7rem;
+    padding: 2rem;
+
+    .links {
+      display: flex;
+      flex-direction: column;
+
+      a {
+        color: #000;
+      }
+    }
+
+    .title {
+      color: #F18A8A;
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    img {
+      margin: 0.5rem;
+      width: 2rem;
     }
   }
 }

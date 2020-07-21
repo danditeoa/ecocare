@@ -15,6 +15,9 @@ import { AdminComponent } from './admin/admin.component';
 import { ProfileComponent } from './profile/profile.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatSelectModule} from '@angular/material/select';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatTableModule} from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -35,7 +38,10 @@ import {MatSelectModule} from '@angular/material/select';
     MatButtonModule,
     MatInputModule,
     MatSidenavModule,
-    MatSelectModule
+    MatSelectModule,
+    MatTabsModule,
+    MatFormFieldModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

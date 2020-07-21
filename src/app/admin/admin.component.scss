@@ -1,0 +1,38 @@
+:host {
+  h3 {
+    color: #F18A8A;
+    padding: 1rem;
+    padding-bottom: 0;
+  }
+
+  .content-form {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+
+    .register {
+      background-color: #F18A8A;
+      color: #fff;
+      width: 100%;
+      margin: 1rem;
+    }
+
+    .upload {
+      background-color: #50BFD5;
+      color: #fff;
+      width: 10rem;
+      margin: 1rem;
+    }
+
+    .confirm {
+      text-align: end;
+    }
+  }
+
+  .mini-line {
+    display: flex;
+    mat-form-field {
+      margin-right: 3rem;
+    }
+  }
+}

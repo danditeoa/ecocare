@@ -1,1 +1,26 @@
-<p>store works!</p>
+<div class="title">Loja</div>
+<mat-drawer-container class="example-container">
+  <mat-drawer mode="side" opened>
+
+    <mat-form-field appearance="fill">
+      <select matNativeControl required>
+        <option value="Maior preço">Maior preço</option>
+        <option value="Menor preço">Menor preço</option>
+      </select>
+    </mat-form-field>
+
+    <div>Pele</div>
+    <div>Cabelos</div>
+    <div>Maquiagem</div>
+    <div>Kit presente</div>
+  </mat-drawer>
+  <mat-drawer-content>
+    <div class="products">
+      <card></card>
+      <card></card>
+      <card></card>
+      <card></card>
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>
+

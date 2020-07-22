@@ -18,6 +18,15 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatTableModule} from '@angular/material/table';
+import {MatDialogModule} from '@angular/material/dialog';
+import { ModalComponent } from './modal/modal.component';
+import { TermosComponent } from './termos/termos.component';
+import { PrivacyComponent } from './privacy/privacy.component';
+import { AboutComponent } from './about/about.component';
+import { HelpComponent } from './help/help.component';
+import { CartComponent } from './cart/cart.component';
+import { ModalCartComponent } from './modal-cart/modal-cart.component';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 @NgModule({
   declarations: [
@@ -28,8 +37,14 @@ import {MatTableModule} from '@angular/material/table';
     StoreComponent,
     ProductComponent,
     AdminComponent,
-    ProfileComponent
-  ],
+    ProfileComponent,
+    ModalComponent,
+    TermosComponent,
+    PrivacyComponent,
+    AboutComponent,
+    HelpComponent,
+    CartComponent,
+    ModalCartComponent,  ],
   imports: [
     AppRoutingModule,
     BrowserModule,
@@ -41,7 +56,12 @@ import {MatTableModule} from '@angular/material/table';
     MatSelectModule,
     MatTabsModule,
     MatFormFieldModule,
-    MatTableModule
+    MatTableModule,
+    MatDialogModule,
+    MatExpansionModule
+  ],
+  entryComponents: [
+    ModalComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

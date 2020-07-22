@@ -1,0 +1,29 @@
+:host {
+
+  .content {
+    padding: 3rem;
+  }
+  mat-accordion {
+    padding: 3rem;
+  }
+  .title {
+    color: #F18A8A;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .options {
+    display: flex;
+    color: #F18A8A;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    justify-content: space-between;
+  }
+
+  img {
+    width: 1rem;
+    margin-left: 1rem;
+  }
+}

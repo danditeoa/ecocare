@@ -1,12 +1,12 @@
 <div class="highlight">
-  <button mat-raised-button>Quero comprar</button>
+  <button (click)="addtoCart()" mat-raised-button>Quero comprar</button>
 </div>
 
 <div class="link-store">
   <p>Sem sofrimento</p>
   <p>Produtos 100% veganos</p>
   <p>Sem testes em animais</p>
-  <a href="">ver produtos</a>
+  <a href="/store">ver produtos</a>
 </div>
 
 <div class="products">
@@ -14,7 +14,7 @@
   <card></card>
   <div class="highlight-cream">
     <div class="img-content">
-      <button mat-raised-button>Ir para categoria</button>
+      <button (click)="goToStore()" mat-raised-button>Ir para categoria</button>
     </div>
   </div>
 </div>
@@ -24,14 +24,14 @@
   <card></card>
   <div class="highlight-hair">
     <div class="img-content">
-      <button mat-raised-button>Ir para categoria</button>
+      <button (click)="goToStore()" mat-raised-button>Ir para categoria</button>
     </div>
   </div>
 </div>
 
 <div class="kits">
-  <div class="kit1"><button mat-raised-button>Comprar</button></div>
-  <div class="kit2"><button mat-raised-button>Comprar</button></div>
+  <div class="kit1"><button (click)="addtoCart()" mat-raised-button>Comprar</button></div>
+  <div class="kit2"><button (click)="addtoCart()" mat-raised-button>Comprar</button></div>
 </div>
 
 <div class="email">
@@ -73,9 +73,9 @@
 <div class="footer">
   <div class="links">
     <div class="title">Eco-care</div>
-    <a href="">Sobre nós</a>
-    <a href="">Termos de uso</a>
-    <a href="">Política de privacidade</a>
+    <a href="/about">Sobre nós</a>
+    <a href="/terms">Termos de uso</a>
+    <a href="/privacy">Política de privacidade</a>
     <a href="">Perguntas e respostas</a>
   </div>
   <div>

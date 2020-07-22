@@ -1,18 +1,22 @@
 <mat-toolbar>
   <mat-toolbar-row>
-    <span>Eco-Care</span>
+    <span (click)="goToHome()">Eco-Care</span>
     <div class="header-items">
       <mat-form-field>
         <input matInput>
         <img src="../assets/search-solid.svg" alt="">
       </mat-form-field>
-      <div class="link-loja">Loja</div>
+      <div (click)="goToStore()" class="link-loja">Loja</div>
 
-      <img src="../assets/shopping-cart-solid.svg" alt="">
-      <img src="../assets/user-circle-solid.svg" alt="">
+      <img (click)="goToCart()" src="../assets/shopping-cart-solid.svg" alt="">
+      <img (click)="goToProfile()" src="../assets/user-circle-solid.svg" alt="">
     </div>
   </mat-toolbar-row>
 </mat-toolbar>
+
+<div class="help">
+  <button (click)="openDialog()">Help</button>
+</div>
 
 <router-outlet></router-outlet>
 

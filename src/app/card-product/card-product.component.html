@@ -1,5 +1,5 @@
 <div class="card">
-  <img src="../../assets/creme.jpg" alt="">
+  <img (click)="goToProduct()" src="../../assets/creme.jpg" alt="">
   <div class="content">
     <p class="title">Creme algas azuis</p>
     <p class="description">
@@ -8,7 +8,7 @@
     </p>
     <p class="price">R$ 20,90</p>
     <div class="button">
-      <button mat-raised-button>Comprar</button>
+      <button (click)="addTocart()" mat-raised-button>Comprar</button>
     </div>
   </div>
 </div>

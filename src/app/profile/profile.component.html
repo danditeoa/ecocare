@@ -1,1 +1,63 @@
-<p>profile works!</p>
+<div class="content">
+  <mat-accordion>
+    <div class="title">Perfil</div>
+
+    <div class="options">
+      <div>Endereços salvos</div>
+      <a href="">Criar novo endereço</a>
+    </div>
+    <mat-expansion-panel hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Rua Dr Laranjeiras 89, ap4
+        </mat-panel-title>
+        <mat-panel-description>
+          Curitiba, PR, CEP-67898065. - Destinatário Eliza Luz
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <a href="">Editar</a>
+      <img src="../../assets/trash.svg" alt="">
+    </mat-expansion-panel>
+    <mat-expansion-panel hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Rua Olivianopolis de Almeira 8099, casa
+        </mat-panel-title>
+        <mat-panel-description>
+          Curitiba, PR, CEP-4321235. - Destinatário Hemilio Soubeira
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <a href="">Editar</a>
+      <img src="../../assets/trash.svg" alt="">
+    </mat-expansion-panel>
+
+    <div  class="options">
+      <div>Meios de Pagamento salvos</div>
+      <a href="">Adicionar novo metódo de epagamento</a>
+    </div>
+    <mat-expansion-panel (opened)="panelOpenState = true"
+                         (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Cartão Nubank - final 0987
+        </mat-panel-title>
+        <mat-panel-description>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <img src="../../assets/trash.svg" alt="">
+    </mat-expansion-panel>
+    <mat-expansion-panel (opened)="panelOpenState = true"
+    (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+      Cartão HipeLegal - final 7654
+      </mat-panel-title>
+      <mat-panel-description>
+      </mat-panel-description>
+      </mat-expansion-panel-header>
+      <img src="../../assets/trash.svg" alt="">
+    </mat-expansion-panel>
+  </mat-accordion>
+
+</div>
+

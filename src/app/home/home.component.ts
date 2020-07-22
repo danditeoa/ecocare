@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,13 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
-  constructor() { }
+  constructor(private route: Router) { }
 
+  goToStore() {
+    this.route.navigate(['/store']);
+  }
+
+  addtoCart() {
+    alert("Item adicionado ao carrinho!");
+  }
 }
